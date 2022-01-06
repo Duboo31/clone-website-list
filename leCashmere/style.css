@@ -1,0 +1,234 @@
+/* mobile first css*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  /* font-family: "Cantata One", NanumBarunGothic, Georgia, "Times New Roman",
+    Times, serif; */
+}
+
+/* reset css */
+button,
+ul,
+li,
+a {
+  all: unset;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* 헤드 영역 */
+.header {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.header-container__upper {
+  display: none;
+}
+
+.header-container__midle {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+.header__logo {
+  cursor: pointer;
+}
+
+.header__logo-img {
+  width: 95px;
+  height: auto;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header__serch-Bt {
+  cursor: pointer;
+}
+
+.header__munu-bar {
+  order: -1;
+  cursor: pointer;
+}
+
+.header-icon {
+  font-size: 0.7rem;
+  height: auto;
+}
+
+.header-container__lower {
+  display: none;
+}
+
+/* 배너 영역 */
+.banner {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100vw;
+  height: auto;
+}
+
+.desktop {
+  display: none;
+}
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1199px) {
+  /* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
+  테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
+  .inner {
+    padding: 0 3rem;
+    max-width: 1600px;
+  }
+
+  .header {
+    position: relative;
+    height: 100%;
+  }
+
+  .header-container__upper {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 3rem;
+    margin-left: -3rem;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nanum Gothic", sans-serif;
+  }
+
+  .nav-sns li,
+  .nav-else li {
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
+  }
+
+  .nav-sns li a {
+    padding: 0 1rem;
+    font-size: 14px;
+  }
+
+  .nav-else li a {
+    padding: 0 2rem;
+    font-size: 0.8rem;
+  }
+
+  .header-container__midle {
+    position: relative;
+    width: 100vw;
+    top: 40px;
+    height: 100px;
+    margin-left: -3rem;
+    padding: 0 3rem;
+  }
+
+  .header__logo-img {
+    width: 200px;
+    height: auto;
+  }
+
+  .header-icon {
+    font-size: 1.1rem;
+  }
+
+  .header-nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    min-width: 720px;
+  }
+
+  .header-nav li {
+    padding: 0 2rem;
+  }
+
+  .header-nav li a {
+    font-size: 1.2rem;
+    color: #383835;
+    font-weight: 600;
+  }
+
+  .header-nav li a:hover {
+    cursor: pointer;
+    color: #b7a17b;
+  }
+
+  .header__munu-bar {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .banner {
+    top: 40px;
+  }
+
+  .desktop {
+    display: block;
+    position: relative;
+    /* top: 0px; */
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: auto;
+  }
+
+  .banner-title {
+    font-size: 3.3rem;
+  }
+}
