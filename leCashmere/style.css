@@ -90,6 +90,33 @@ a:visited {
   font-size: 1.7rem;
 }
 
+.main-container {
+  position: relative;
+  top: 50px;
+  padding: 20px 1rem 60px;
+  margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 0.7rem;
+}
+
+.goods-sort-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goods-sort select {
+  height: 31px;
+  padding: 5px 25px 5px 10px;
+  color: #333;
+  border: 1px solid #dbdbdb;
+  background: #fff;
+}
+
+em {
+  color: #b7a17b;
+}
+
 /* 데스크탑 */
 @media screen and (min-width: 1023px) {
   /* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
@@ -195,7 +222,7 @@ a:visited {
   }
 
   .banner {
-    top: 40px;
+    top: 100px;
   }
 
   .desktop {
@@ -210,5 +237,10 @@ a:visited {
 
   .banner-title {
     font-size: 3.3rem;
+  }
+
+  .main-container {
+    max-width: 1200px;
+    top: 100px;
   }
 }
