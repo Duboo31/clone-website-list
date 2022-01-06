@@ -7,8 +7,6 @@
 
 .wrap {
   margin: 0 auto;
-  /* font-family: "Cantata One", NanumBarunGothic, Georgia, "Times New Roman",
-    Times, serif; */
 }
 
 /* reset css */
@@ -27,66 +25,42 @@ a:visited {
   text-decoration: none;
 }
 
-/* 헤드 영역 */
-.header {
-  height: 100%;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-}
-
-.inner {
-  width: 100%;
-  height: 100%;
-  padding: 0 1rem;
-}
-
-.header-container__upper {
+.header-upper {
   display: none;
 }
 
-.header-container__midle {
+.header-midle {
+  width: 100vw;
   height: 50px;
-  width: 100%;
-  text-align: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #fff;
+  z-index: 99;
 }
 
-.header__logo {
-  cursor: pointer;
-}
-
-.header__logo-img {
-  width: 95px;
-  height: auto;
-}
-
-.header-nav {
+.desktop-nav {
   display: none;
-}
-
-.header__serch-Bt {
-  cursor: pointer;
-}
-
-.header__munu-bar {
-  order: -1;
-  cursor: pointer;
 }
 
 .header-icon {
-  font-size: 0.7rem;
-  height: auto;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.header-container__lower {
-  display: none;
+.header-logo__img {
+  width: 95px;
+  height: auto;
+  cursor: pointer;
+}
+
+.header-serch {
+  padding: 0 1rem;
 }
 
 /* 배너 영역 */
@@ -117,96 +91,103 @@ a:visited {
 }
 
 /* 데스크탑 */
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1023px) {
   /* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
   테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
-  .inner {
-    padding: 0 3rem;
-    max-width: 1600px;
-  }
 
-  .header {
-    position: relative;
-    height: 100%;
-  }
-
-  .header-container__upper {
+  .header-upper {
     display: block;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    width: 100vw;
     height: 40px;
-    padding: 0 3rem;
-    margin-left: -3rem;
-    background: #f0f0f0;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2.5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #f0f0f0;
+  }
+
+  .nav-sns__item {
+    width: 40px;
+    height: 40px;
+    padding: 16px 15px;
+  }
+
+  .nav-else__item {
+    padding: 13px 30px;
+  }
+
+  .nav-else__item a {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .sns-icon {
+    font-size: 13px;
+  }
+
+  .nav-else {
     font-family: "Nanum Gothic", sans-serif;
   }
 
-  .nav-sns li,
-  .nav-else li {
-    border-right: 1px solid #dbdbdb;
-    border-left: 1px solid #dbdbdb;
-  }
-
-  .nav-sns li a {
-    padding: 0 1rem;
-    font-size: 14px;
-  }
-
-  .nav-else li a {
-    padding: 0 2rem;
-    font-size: 0.8rem;
-  }
-
-  .header-container__midle {
-    position: relative;
-    width: 100vw;
+  .header-midle {
+    position: absolute;
     top: 40px;
     height: 100px;
-    margin-left: -3rem;
-    padding: 0 3rem;
+    padding: 0 2.5rem;
+    background: #fff;
   }
 
-  .header__logo-img {
-    width: 200px;
-    height: auto;
-  }
-
-  .header-icon {
-    font-size: 1.1rem;
-  }
-
-  .header-nav {
+  .desktop-nav {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    min-width: 720px;
+    min-width: 1000px;
+    position: relative;
   }
 
-  .header-nav li {
-    padding: 0 2rem;
-  }
-
-  .header-nav li a {
-    font-size: 1.2rem;
-    color: #383835;
-    font-weight: 600;
-  }
-
-  .header-nav li a:hover {
+  .desktop-nav__item {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0 2.5rem;
     cursor: pointer;
+  }
+
+  .desktop-nav__item a:hover {
     color: #b7a17b;
   }
 
-  .header__munu-bar {
+  /* .detail {
+    background: #b7a17b;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: -50%;
+  }
+
+  .detail__item {
+    color: rgb(245, 245, 245);
+  }
+
+  .detail__item a:hover {
+    color: #fff;
+  } */
+
+  .header-menu {
     display: none;
+  }
+
+  .header-icon {
+    font-size: 18px;
+  }
+
+  .header-logo__img {
+    width: 200px;
   }
 
   .mobile {
@@ -220,7 +201,6 @@ a:visited {
   .desktop {
     display: block;
     position: relative;
-    /* top: 0px; */
     top: 0;
     left: 50%;
     margin-left: -960px;
