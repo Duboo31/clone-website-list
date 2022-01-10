@@ -8,5 +8,3 @@
   - CSSViewer
   - whatFont
   - Page Ruler
-
-![cloneCodign-mobile](https://user-images.githubusercontent.com/92058864/148733744-1fe639fa-cbe8-4a1b-84ed-17ea82148a03.gif)
