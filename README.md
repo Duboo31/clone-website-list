@@ -19,8 +19,4 @@
 
 ## le cashmere 🖥️
 
-![](https://images.velog.io/images/duboo/post/6b1ded44-4620-4f85-9bc5-e9b69e986a2f/cloneCoding-desktop.gif)
-
 ## le cashmere 📱
-
-![](https://images.velog.io/images/duboo/post/60866447-f552-45bf-abe1-07a60045621f/cloneCodign-mobile.gif)
