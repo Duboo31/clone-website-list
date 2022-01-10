@@ -17,10 +17,4 @@
 
 - **html, css :** 레이아웃과 스타일을 제대로 활용할 수 있는지에 초점을 맞춰 작성한 정적인 페이지입니다.
 
-## le cashmere 🖥️
-
-<img src="https://images.velog.io/images/duboo/post/0eb43dd5-ed72-43f3-9e76-a827657d62d6/cloneCoding-desktop.gif" width="600"/>
-
-## le cashmere 📱
-
-<img src="https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif" width="250"/>
+[블로그 정리](https://velog.io/@duboo/%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-1.-html-css)
