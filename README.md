@@ -8,3 +8,19 @@
   - CSSViewer
   - whatFont
   - Page Ruler
+
+# #1. le cashmere
+
+해당 페이지는 반응형이 아닌 접속하는 디바이스에 따라 필요한 코드를 불러오는 **정적인 웹**입니다.
+
+따라서 모바일을 기준으로 잡고 데스크탑에도 반응할 수 있도록 고려해서 반응형 웹을 만들었습니다.
+
+- **html, css :** 레이아웃과 스타일을 제대로 활용할 수 있는지에 초점을 맞춰 작성한 정적인 페이지입니다.
+
+## le cashmere 🖥️
+
+![](https://images.velog.io/images/duboo/post/6b1ded44-4620-4f85-9bc5-e9b69e986a2f/cloneCoding-desktop.gif)
+
+## le cashmere 📱
+
+![](https://images.velog.io/images/duboo/post/60866447-f552-45bf-abe1-07a60045621f/cloneCodign-mobile.gif)
