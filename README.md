@@ -18,7 +18,7 @@
 - **html, css :** 레이아웃과 스타일을 제대로 활용할 수 있는지에 초점을 맞춰 작성한 정적인 페이지입니다.
 
 ## le cashmere 🖥️
-<img src="https://images.velog.io/images/duboo/post/a7c78fa3-addb-4c0c-98c5-591e273aa19c/desktopClond.gif" width="600"/>
+<img src="https://images.velog.io/images/duboo/post/a7c78fa3-addb-4c0c-98c5-591e273aa19c/desktopClond.gif"/>
 
 ## le cashmere 📱
 <img src="https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif" width="250"/>
