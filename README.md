@@ -20,4 +20,4 @@
 ## le cashmere 🖥️
 
 ## le cashmere 📱
-![cloneCodign-mobile](https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif)
+<img src="https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif  width="300"/>
