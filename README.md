@@ -21,4 +21,4 @@
 <img src="https://images.velog.io/images/duboo/post/6b1ded44-4620-4f85-9bc5-e9b69e986a2f/cloneCoding-desktop.gif" />
 
 ## le cashmere 📱
-<center><img src="https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif" width="300"/></center>
+<center><img src="https://user-images.githubusercontent.com/92058864/148735560-fc9e38f8-e4b1-480d-b41c-e194ccc69675.gif" width="250"/></center>
