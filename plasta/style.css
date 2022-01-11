@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+ul,
+li,
+button {
+  all: unset;
+}
+
+body {
+  background-color: skyblue;
+}
+
+/* 상단 네비 */
+
+#upper-container {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+
+.header-logo a {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-item a img {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+#hambuger-icon img {
+  width: 1.5rem;
+  height: auto;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+/* 네비 활성화 */
+#nav-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  background-color: #fff;
+  z-index: 999;
+  font-family: "Nanum Gothic", sans-serif;
+  transition: 0.7s;
+}
+
+.nav-upper {
+  margin: 0;
+}
+
+.nav-upeer__item {
+  padding: 1rem 1rem;
+}
+
+.nav-upeer__item h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  color: #686868;
+}
+
+.nav-upeer__item p {
+  font-size: 0.7rem;
+  color: #737373;
+}
+
+.nav-upper ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.nav-upper ul li {
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #1d293f;
+  color: #fff;
+  font-size: 0.7rem;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-upper ul li:last-child {
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-lower ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.nav-lower ul li {
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #ddd;
+  line-height: 45px;
+  padding: 0 1rem;
+  color: #5c5c5c;
+  font-weight: 600;
+  font-size: 0.7rem;
+}
+
+#closeBt {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #5c5c5c;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Desktop 영역 */
+/* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
+테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
+@media screen and (min-width: 1023px) {
+  /* 상단 영역 */
+  .header-logo a {
+    font-size: 2.5rem;
+  }
+
+  .header-item a img {
+    width: 2.5rem;
+    height: auto;
+  }
+
+  #hambuger-icon img {
+    width: 2rem;
+    height: auto;
+  }
+}
