@@ -385,6 +385,41 @@ em {
   font-size: 0.8rem;
 }
 
+#backToTop {
+  background-color: rgb(126, 126, 126);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  transition-property: background-color, opacity, visibility;
+  transition-duration: 0.3s, 0.5s, 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+#backToTop::after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgb(126, 126, 126);
+}
+
+#backToTop.show:hover {
+  cursor: pointer;
+  background-color: rgb(22, 22, 22);
+}
+
 /* 데스크탑 */
 @media screen and (min-width: 1023px) {
   /* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
