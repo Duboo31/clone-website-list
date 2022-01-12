@@ -12,7 +12,10 @@ button {
 }
 
 body {
-  background-color: skyblue;
+  background-color: #c8aa9a;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* 상단 네비 */
@@ -32,6 +35,7 @@ body {
 
 .header-logo a {
   font-size: 1.5rem;
+  font-weight: bold;
   color: #fff;
   cursor: pointer;
 }
@@ -60,7 +64,7 @@ body {
   background-color: #fff;
   z-index: 999;
   font-family: "Nanum Gothic", sans-serif;
-  transition: 0.7s;
+  transition: 0.4s ease;
 }
 
 .nav-upper {
@@ -102,6 +106,7 @@ body {
   font-size: 0.7rem;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .nav-upper ul li:last-child {
@@ -123,6 +128,7 @@ body {
   color: #5c5c5c;
   font-weight: 600;
   font-size: 0.7rem;
+  cursor: pointer;
 }
 
 #closeBt {
@@ -134,10 +140,184 @@ body {
   cursor: pointer;
 }
 
+/* 메인 이미지 영역 */
+
+.opacity-img {
+  position: relative;
+}
+
+.opacity-upper {
+  width: 100%;
+  height: auto;
+  max-height: 960px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 997;
+  opacity: 1;
+}
+
+.opacity-lower {
+  width: 100%;
+  height: auto;
+  max-height: 960px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 995;
+}
+
+.plastic {
+  background: url("https://www.plasta.co.kr/images/mv_plastic.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.plastic.next {
+  background: url("https://www.plasta.co.kr/images/mv_plastic2.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.plastic a,
+.metal a {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+.plastic a p::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.5rem;
+  vertical-align: middle;
+  padding: 0 1rem;
+}
+
+.metal {
+  background: url("https://www.plasta.co.kr/images/mv_metal.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.metal.next {
+  background: url("https://www.plasta.co.kr/images/mv_metal2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.metal a {
+  left: 0;
+}
+
+.metal a p::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.5rem;
+  vertical-align: middle;
+  padding: 0 1rem;
+}
+
+/* 팝업창 */
+.popUp-container {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: 600px;
+  max-width: 90%;
+  padding: 3.5% 1.5% 2%;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 999;
+  box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
+  border-radius: 0 10px 0 10px;
+}
+
+iframe {
+  height: 324px;
+}
+
+.popUp-tit {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+}
+
+.close-pop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 0;
+  display: block;
+  background: #c8aa9a;
+  line-height: 40px;
+  text-align: center;
+}
+
+.close-pop::after {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn_more {
+  display: inline-block;
+  color: #fff;
+  background: #c8aa9a;
+  line-height: 2rem;
+  border-radius: 40px;
+  padding: 0 0.9rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 0.15rem;
+}
+
+.close {
+  display: none;
+}
+
 /* Desktop 영역 */
-/* 스크린의 크기가 1023을 넘게된다면 해당 스타일을 적용합니다.
+/* 스크린의 크기가 950을 넘게된다면 해당 스타일을 적용합니다.
 테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 950px) {
   /* 상단 영역 */
   .header-logo a {
     font-size: 2.5rem;
@@ -151,5 +331,31 @@ body {
   #hambuger-icon img {
     width: 2rem;
     height: auto;
+  }
+
+  /* 메인 이미지 영역 */
+  .opacity-upper,
+  .opacity-lower {
+    flex-direction: row;
+  }
+
+  .plastic,
+  .plastic.next {
+    width: 50%;
+    height: 960px;
+  }
+  .metal,
+  .metal.next {
+    width: 50%;
+    height: 960px;
+  }
+
+  .plastic a,
+  .metal a {
+    font-size: 1.5rem;
+  }
+
+  .opacity-lower {
+    flex-direction: row;
   }
 }

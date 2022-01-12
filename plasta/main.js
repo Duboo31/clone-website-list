@@ -1,3 +1,5 @@
+// 상단 네비게이션-----------------------------------------------------------------
+
 const checkScroll = () => {
   let pageYOffSet = window.pageYOffset;
   const upperContainer = document.getElementById('upper-container');
@@ -15,7 +17,7 @@ const showNavSection = () => {
   const navContainer = document.getElementById('nav-container');
   const windowWidth = window.innerWidth;  
   
-  if(windowWidth > 1023) {
+  if(windowWidth > 950) {
     navContainer.style.width = "340px"
     navContainer.style.right = "0"
   } else {
@@ -31,7 +33,7 @@ const closeNavBar = () => {
   const windowWidth = window.innerWidth;  
 
   // Desktop
-  if(windowWidth > 1023) {
+  if(windowWidth > 950) {
     navContainer.style.width = "340px"
     navContainer.style.right = "-340px";
   } else {
@@ -44,3 +46,15 @@ const closeNavBar = () => {
 closeBt.addEventListener('click', closeNavBar);
 hambugerMenu.addEventListener('click', showNavSection);
 window.addEventListener('scroll', checkScroll);
+
+
+// 팝업 닫기-----------------------------------------------------------------------
+const popupBt = document.querySelector('.close-pop');
+
+popupBt.addEventListener('click', () => {
+  const popBox = document.querySelector('.popUp-container');
+  popBox.style.display = 'none'
+});
+
+
+// 메인 이미지 영역------------------------------------------------------------------
