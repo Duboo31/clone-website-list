@@ -55,6 +55,3 @@ popupBt.addEventListener('click', () => {
   const popBox = document.querySelector('.popUp-container');
   popBox.style.display = 'none'
 });
-
-
-// 메인 이미지 영역------------------------------------------------------------------

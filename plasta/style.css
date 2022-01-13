@@ -18,7 +18,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* 상단 네비 */
+/* 상단 네비 -----------------------------------------------------------*/
 
 #upper-container {
   width: 100%;
@@ -54,7 +54,7 @@ body {
   margin-left: 0.5rem;
 }
 
-/* 네비 활성화 */
+/* 네비 활성화 -----------------------------------------------------------*/
 #nav-container {
   width: 100%;
   height: 100vh;
@@ -140,7 +140,43 @@ body {
   cursor: pointer;
 }
 
-/* 메인 이미지 영역 */
+/* 메인 이미지 영역 -----------------------------------------------------------*/
+
+@keyframes blink-effect {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .opacity-img {
   position: relative;
@@ -158,6 +194,7 @@ body {
   flex-direction: column;
   z-index: 997;
   opacity: 1;
+  animation: blink-effect 12s infinite;
 }
 
 .opacity-lower {
@@ -247,7 +284,7 @@ body {
   padding: 0 1rem;
 }
 
-/* 팝업창 */
+/* 팝업창 ----------------------------------------------------------------*/
 .popUp-container {
   position: fixed;
   top: 10%;
@@ -261,6 +298,8 @@ body {
   z-index: 999;
   box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
   border-radius: 0 10px 0 10px;
+  /* 삭제해야함 */
+  display: none;
 }
 
 iframe {
@@ -314,7 +353,7 @@ iframe {
   display: none;
 }
 
-/* Desktop 영역 */
+/* Desktop 영역 -----------------------------------------------------------*/
 /* 스크린의 크기가 950을 넘게된다면 해당 스타일을 적용합니다.
 테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
 @media screen and (min-width: 950px) {
