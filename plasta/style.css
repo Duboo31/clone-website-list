@@ -12,15 +12,13 @@ button {
 }
 
 body {
-  background-color: #c8aa9a;
-  font-family: "Nanum Gothic", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
 /* 상단 네비 -----------------------------------------------------------*/
 
-#upper-container {
+.upper-container {
   width: 100%;
   padding: 1rem;
   display: flex;
@@ -34,7 +32,7 @@ body {
 }
 
 .header-logo a {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -202,9 +200,6 @@ body {
   height: auto;
   max-height: 960px;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   z-index: 995;
@@ -351,6 +346,52 @@ iframe {
 
 .close {
   display: none;
+}
+
+/* 신상 정보----------------------------------------------------------------- */
+.new-collection {
+  overflow: hidden;
+  padding: 7.5rem 0;
+  background-color: #c8aa9a;
+  width: 100%;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 0.3rem;
+}
+
+.new-collection__tit {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.new-collection__more {
+  color: rgba(29, 41, 63, 0.3);
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-bottom: 2.2rem;
+}
+
+.collection-container {
+}
+
+.collection__list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.collection__item {
+  width: 500px;
+  margin: 0 3rem;
+}
+
+.collection__item img {
+  width: 975px;
+  height: auto;
+  display: inline-block;
 }
 
 /* Desktop 영역 -----------------------------------------------------------*/

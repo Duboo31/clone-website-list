@@ -2,7 +2,7 @@
 
 const checkScroll = () => {
   let pageYOffSet = window.pageYOffset;
-  const upperContainer = document.getElementById('upper-container');
+  const upperContainer = document.querySelector('.upper-container');
 
   if(pageYOffSet > 200) {
     upperContainer.style.backgroundColor = "rgba(0,0,0,0.4)"
