@@ -55,3 +55,5 @@ popupBt.addEventListener('click', () => {
   const popBox = document.querySelector('.popUp-container');
   popBox.style.display = 'none'
 });
+
+// 신상 정보 슬라이드 이미지

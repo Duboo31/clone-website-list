@@ -376,27 +376,94 @@ iframe {
 }
 
 .collection-container {
+  width: 975px;
+  height: 560px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: left 0.5s ease-out; /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+  /*리스트 형식으로 이미지를 일렬로 정렬할 것이기 때문에, 500px
+  밖으로 튀어 나간 이미지들은 hidden으로 숨겨줘야됨*/
 }
 
 .collection__list {
-  display: flex;
-  flex-flow: row nowrap;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(975px * 3); /* 슬라이드할 사진과 마진 총 넓이 */
+  transform: translateX(calc(-975px * 0));
 }
 
 .collection__item {
-  width: 500px;
-  margin: 0 3rem;
+  float: left;
 }
 
 .collection__item img {
-  width: 975px;
-  height: auto;
+  vertical-align: bottom;
+}
+
+/* 브랜드 소개 */
+.plasta-about {
+  position: relative;
+  color: #e8cec1;
+  background: url("https://images.velog.io/images/duboo/post/f8690763-89e0-44c2-8149-1ae37fc58c4d/image.png")
+    no-repeat right top;
+  background-size: 100% auto;
+  padding-top: 60vw;
+  overflow: hidden;
+}
+
+.plasta-about h3 {
+  position: absolute;
+  left: 0;
+  top: 8%;
+  font-weight: 500;
+  color: #c8aa9a;
+  padding-left: 100px;
+  letter-spacing: 0.4rem;
+}
+
+.plasta-about h3::before {
+  content: "";
+  width: 86px;
+  height: 1px;
+  background: #c8aa9a;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: 0.2rem;
+}
+
+.plasta-about__text {
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  background-color: rgb(29, 41, 63);
+  padding: 8rem 0;
+}
+
+.plasta-about__text h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.plasta-about__text h4 span {
   display: inline-block;
+  width: 135px;
+  border-bottom: 2px solid #e8cec1;
+  margin-left: -0.2rem;
+  margin-right: 0.5rem;
+}
+
+.plasta-about__text p {
+  margin-top: 2.5rem;
+  line-height: 2.2rem;
+  font-size: 1.2rem;
 }
 
 /* Desktop 영역 -----------------------------------------------------------*/
-/* 스크린의 크기가 950을 넘게된다면 해당 스타일을 적용합니다.
-테스크탑을 위한 영역입니다. 테스크탑 스크린에만 적용될 css를 작성합니다. */
+/* 스크린의 크기가 950을 넘게된다면 해당 스타일을 적용합니다. */
 @media screen and (min-width: 950px) {
   /* 상단 영역 */
   .header-logo a {
@@ -437,5 +504,17 @@ iframe {
 
   .opacity-lower {
     flex-direction: row;
+  }
+
+  /* 브랜드 설명 영역 */
+  .plasta-about {
+    padding-top: 0;
+    background-size: auto 100%;
+  }
+
+  .plasta-about__text {
+    order: -1;
+    width: 50%;
+    padding: 17rem 0;
   }
 }
