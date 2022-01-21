@@ -509,6 +509,17 @@ body {
   font-size: 0.8rem;
 }
 
+/* 하단 이미지 영역 */
+.footer-img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.footer-img img {
+  width: 100%;
+}
+
 /* 팝업창 ----------------------------------------------------------------*/
 .popUp-container {
   position: fixed;
@@ -702,6 +713,16 @@ iframe {
 
   .card {
     width: calc(100% / 4 - 10px);
+  }
+
+  /* 하단 이미지 영역 */
+  .footer-img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-img img {
+    width: 50%;
   }
 
   /* 팝업 창 영역 */
