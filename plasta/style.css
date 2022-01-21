@@ -282,7 +282,7 @@ body {
 /* 신상 정보----------------------------------------------------------------- */
 .new-collection {
   overflow: hidden;
-  padding: 3rem 0;
+  padding: 5rem 0;
   background-color: #c8aa9a;
   width: 100%;
   text-align: center;
@@ -518,6 +518,62 @@ body {
 
 .footer-img img {
   width: 100%;
+}
+
+/* 하단 영역 */
+.footer-container {
+  background: #000;
+  padding: 5% 2rem;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-upper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-upper h1 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-upper__info {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.7rem;
+  width: 80%;
+  opacity: 0.5;
+}
+
+.footer-lower {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 0.7rem;
+  min-width: 62px;
+  opacity: 0.5;
+}
+
+.backToTop {
+  width: 45px;
+  height: 45px;
+  background: #000;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+  line-height: 45px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.backToTop::before {
+  content: "\f30c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 /* 팝업창 ----------------------------------------------------------------*/

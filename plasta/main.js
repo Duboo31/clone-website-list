@@ -1,4 +1,5 @@
-// 상단 네비게이션, 백 투 탑----------------------------------------------------------
+// 상단 네비게이션, 백 투 탑----------------------------------------------------------------
+const backToTopBt = document.querySelector('.backToTop');
 
 const checkScroll = () => {
   let pageYOffSet = window.pageYOffset;
@@ -6,8 +7,10 @@ const checkScroll = () => {
 
   if(pageYOffSet > 200) {
     upperContainer.style.backgroundColor = "rgba(0,0,0,0.4)"
+    backToTopBt.style.display = "inline-block"
   } else {
     upperContainer.style.backgroundColor = ""
+    backToTopBt.style.display = "none"
   }
 }
 
@@ -43,6 +46,14 @@ const closeNavBar = () => {
   }
 }
 
+const moveBackToTop = () => {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
+backToTopBt.addEventListener('click', moveBackToTop);
 closeBt.addEventListener('click', closeNavBar);
 hambugerMenu.addEventListener('click', showNavSection);
 window.addEventListener('scroll', checkScroll);
@@ -56,5 +67,4 @@ popupBt.addEventListener('click', () => {
   popBox.style.display = 'none'
 });
 
-// 신상 정보 슬라이드 이미지
-
+// 신상 정보 슬라이드 이미지 -----------------------------------------------------------
