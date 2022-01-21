@@ -282,7 +282,7 @@ body {
 /* 신상 정보----------------------------------------------------------------- */
 .new-collection {
   overflow: hidden;
-  padding: 7.5rem 0;
+  padding: 3rem 0;
   background-color: #c8aa9a;
   width: 100%;
   text-align: center;
@@ -334,7 +334,7 @@ body {
   vertical-align: bottom;
 }
 
-/* 브랜드 소개 */
+/* 브랜드 소개 ------------------------------------------------------------------*/
 .plasta-about {
   position: relative;
   color: #e8cec1;
@@ -395,7 +395,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* 브랜드 스토리 영역 */
+/* 브랜드 스토리 영역 -------------------------------------------------------*/
 .brand-story {
   background: url("https://images.velog.io/images/duboo/post/4d03e92d-3755-4edb-8aee-c600c193ef22/image.png")
     no-repeat center;
@@ -421,6 +421,92 @@ body {
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.3rem;
+}
+
+/* 플라스틱, 메탈 아이템 영역 ----------------------------------------------------------- */
+.plastic-item {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.metal-item {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.plastic-item .img {
+  background: url("https://images.velog.io/images/duboo/post/c730404e-a552-440d-9590-1c080d0c8c60/image.png")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vw;
+}
+
+.metal-item .img {
+  background: url("https://www.plasta.co.kr/images/metal_item.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vw;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 8% 6%;
+}
+
+.tit h3 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.tit a {
+  color: rgba(24, 27, 32, 0.3);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  cursor: pointer;
+  width: calc(50% - 10px);
+  margin: 0 5px 20px;
+}
+
+.card a img {
+  vertical-align: bottom;
+  border: 1px solid #f2eded;
+}
+
+.name {
+  color: #5c5c5c;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  margin: 1.2rem 0 0.3rem;
+}
+
+.cost {
+  font-weight: 900;
+  font-size: 0.8rem;
 }
 
 /* 팝업창 ----------------------------------------------------------------*/
@@ -535,6 +621,10 @@ iframe {
   }
 
   /* 신상 정보 이미지 슬라이드 */
+  .new-collection {
+    padding: 7.5rem 0;
+  }
+
   .new-collection__tit {
     font-size: 1.5rem;
   }
@@ -581,6 +671,37 @@ iframe {
   /* 브랜드 스토리 영역 */
   .brand-story {
     padding: 6% 0;
+  }
+
+  /* 플라스틱, 메탈 아이템 영역 */
+  .plastic-item,
+  .metal-item {
+    display: flex;
+    flex-direction: row;
+    padding: 8% 0 4%;
+  }
+
+  .plastic-item .img,
+  .metal-item .img {
+    width: 29.5%;
+    height: 38vw;
+  }
+
+  .metal-item .img {
+    order: 1;
+  }
+
+  .container {
+    width: 70.5%;
+    padding: 0 2%;
+  }
+
+  .tit h3 {
+    margin-top: 4rem;
+  }
+
+  .card {
+    width: calc(100% / 4 - 10px);
   }
 
   /* 팝업 창 영역 */
