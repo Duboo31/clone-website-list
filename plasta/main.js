@@ -68,3 +68,9 @@ popupBt.addEventListener('click', () => {
 });
 
 // 신상 정보 슬라이드 이미지 -----------------------------------------------------------
+const sliderContainer = document.querySelector('.collection-container');
+const sliderList = document.querySelector('.collection__list');
+const sliderItem = document.querySelectorAll('.collection__item');
+
+
+sliderItem.forEach(el => el.addEventListener('click', () => {console.log('is Working')}))

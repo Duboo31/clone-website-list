@@ -11,7 +11,8 @@ button {
   all: unset;
 }
 
-body {
+.wrap {
+  background: #f8f8f8;
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Poppins", sans-serif;
 }
@@ -307,27 +308,12 @@ body {
 }
 
 .collection-container {
-  /* width: 975px; */
-  /* height: 560px; */
-  /* position: relative; */
-  /* margin: 0 auto; */
-  /* overflow: hidden; */
-  /* transition: left 0.5s ease-out;  */
-  /*리스트 형식으로 이미지를 일렬로 정렬할 것이기 때문에, 500px
-  밖으로 튀어 나간 이미지들은 hidden으로 숨겨줘야됨*/
 }
 
 .collection__list {
-  /* position: absolute; */
-  /* left: 0; */
-  /* top: 0; */
-  /* 슬라이드할 사진과 마진 총 넓이 */
-  /* width: calc(975px * 3);  */
-  /* transform: translateX(calc(-975px * 0)); */
 }
 
 .collection__item {
-  float: left;
 }
 
 .collection__item img {
@@ -395,7 +381,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* 브랜드 스토리 영역 -------------------------------------------------------*/
+/* 브랜드 소개 영역 -------------------------------------------------------*/
 .brand-story {
   background: url("https://images.velog.io/images/duboo/post/4d03e92d-3755-4edb-8aee-c600c193ef22/image.png")
     no-repeat center;
@@ -421,16 +407,63 @@ body {
   font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+
+/* 베스트 아이템 영역 */
+.best-container {
+  padding: 8% 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.best-container > h3 {
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.best-items {
+  display: flex;
+  position: relative;
+  padding: 5rem 0 0;
+}
+
+.prevBt {
+}
+
+.nextBt {
+}
+
+.best-list {
+  width: 100%;
+  display: flex;
+}
+
+.best-item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.best-item__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.best-item__tit {
+  font-weight: 700;
 }
 
 /* 플라스틱, 메탈 아이템 영역 ----------------------------------------------------------- */
-.plastic-item {
-  display: flex;
-  flex-direction: column;
-  background: #f8f8f8;
-  text-align: center;
-}
-
+.plastic-item,
 .metal-item {
   display: flex;
   flex-direction: column;
@@ -458,7 +491,8 @@ body {
 .container {
   display: flex;
   flex-flow: column nowrap;
-  padding: 8% 6%;
+  align-items: center;
+  padding: 2% 2%;
 }
 
 .tit h3 {
@@ -527,6 +561,7 @@ body {
   color: #fff;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .footer-upper {
@@ -534,9 +569,11 @@ body {
   flex-direction: column;
 }
 
-.footer-upper h1 {
+.footer-upper h1 a {
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .footer-upper__info {
@@ -555,6 +592,10 @@ body {
   opacity: 0.5;
 }
 
+.footer-lower li {
+  cursor: pointer;
+}
+
 .backToTop {
   width: 45px;
   height: 45px;
@@ -567,6 +608,7 @@ body {
   line-height: 45px;
   text-align: center;
   cursor: pointer;
+  z-index: 999;
 }
 
 .backToTop::before {
@@ -590,6 +632,8 @@ body {
   z-index: 999;
   box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
   border-radius: 0 10px 0 10px;
+  /* 삭제해야함 */
+  display: none;
 }
 
 iframe {
@@ -687,7 +731,7 @@ iframe {
     flex-direction: row;
   }
 
-  /* 신상 정보 이미지 슬라이드 */
+  /* 신상 정보 이미지 슬라이드 -----------------------------------------------------*/
   .new-collection {
     padding: 7.5rem 0;
   }
@@ -764,7 +808,7 @@ iframe {
   }
 
   .tit h3 {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
 
   .card {
