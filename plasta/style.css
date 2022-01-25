@@ -11,10 +11,6 @@ button {
   all: unset;
 }
 
-img {
-  max-width: 100%;
-}
-
 .wrap {
   background: #f8f8f8;
   font-family: "Nanum Gothic", sans-serif;
@@ -439,28 +435,18 @@ img {
 }
 
 .best-items {
-  width: 100%;
+  width: 90%;
   display: flex;
-  position: relative;
-  padding: 10% 0;
-}
-
-.best-items::-webkit-scrollbar {
-  display: none;
-}
-
-.prevBt {
-}
-
-.nextBt {
+  padding: 5% 0;
 }
 
 .best-list {
-  width: 100%;
-  margin: auto;
+  width: 100000px;
   display: flex;
-  align-items: center;
   overflow-x: auto;
+  transition: 0.5s;
+  position: relative;
+  left: -0.25rem;
 }
 
 .best-list::-webkit-scrollbar {
@@ -468,11 +454,14 @@ img {
 }
 
 .best-item {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  transition: 0.5s;
+  min-width: calc(50% - 1rem);
   margin: 0 0.5rem;
+}
+
+.best-item img {
+  max-width: none;
+  width: 100%;
 }
 
 .best-item__info {
@@ -490,6 +479,27 @@ img {
 
 .best-item__cost {
   font-size: 0.7rem;
+}
+
+.prev,
+.next {
+  width: 40px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+}
+
+.prev {
+  background-image: url("https://www.plasta.co.kr/images/arrow_prev.png");
+  left: 0.2rem;
+}
+
+.next {
+  background-image: url("https://www.plasta.co.kr/images/arrow_next.png");
+  right: 0.2rem;
 }
 
 /* 플라스틱, 메탈 아이템 영역 ----------------------------------------------------------- */
@@ -823,6 +833,36 @@ iframe {
   }
 
   /* 베스트 아이템 슬라이드 영역 */
+  .best-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .best-item img {
+    max-width: none;
+  }
+
+  .best-list {
+    left: -0.5rem;
+  }
+
+  .best-item {
+    min-width: calc(25% - 2rem);
+    margin: 0 1rem;
+  }
+
+  .prev,
+  .next {
+    width: 40px;
+    height: 80px;
+  }
+
+  .prev {
+    left: 1.2rem;
+  }
+
+  .next {
+    right: 1.2rem;
+  }
 
   /* 브랜드 스토리 영역 */
   .brand-story {
