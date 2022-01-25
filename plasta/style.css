@@ -11,6 +11,10 @@ button {
   all: unset;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrap {
   background: #f8f8f8;
   font-family: "Nanum Gothic", sans-serif;
@@ -289,6 +293,7 @@ button {
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
   letter-spacing: 0.3rem;
+  background: red;
 }
 
 .new-collection__tit {
@@ -308,12 +313,19 @@ button {
 }
 
 .collection-container {
+  background: blue;
+  overflow: hidden;
+  width: calc(980px * 5);
 }
 
 .collection__list {
+  display: block;
+  float: left;
+  overflow: hidden;
 }
 
 .collection__item {
+  display: inline-block;
 }
 
 .collection__item img {
@@ -412,6 +424,7 @@ button {
 
 /* 베스트 아이템 영역 */
 .best-container {
+  width: 100%;
   padding: 8% 0;
   display: flex;
   flex-flow: column wrap;
@@ -421,14 +434,19 @@ button {
 
 .best-container > h3 {
   font-weight: 600;
-  letter-spacing: 0.4rem;
-  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+  font-size: 1rem;
 }
 
 .best-items {
+  width: 100%;
   display: flex;
   position: relative;
-  padding: 5rem 0 0;
+  padding: 10% 0;
+}
+
+.best-items::-webkit-scrollbar {
+  display: none;
 }
 
 .prevBt {
@@ -439,7 +457,14 @@ button {
 
 .best-list {
   width: 100%;
+  margin: auto;
   display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.best-list::-webkit-scrollbar {
+  display: none;
 }
 
 .best-item {
@@ -447,7 +472,7 @@ button {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 .best-item__info {
@@ -455,11 +480,16 @@ button {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .best-item__tit {
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.best-item__cost {
+  font-size: 0.7rem;
 }
 
 /* 플라스틱, 메탈 아이템 영역 ----------------------------------------------------------- */
@@ -526,6 +556,7 @@ button {
 .card a img {
   vertical-align: bottom;
   border: 1px solid #f2eded;
+  max-width: 100%;
 }
 
 .name {
@@ -733,6 +764,7 @@ iframe {
 
   /* 신상 정보 이미지 슬라이드 -----------------------------------------------------*/
   .new-collection {
+    width: 100%;
     padding: 7.5rem 0;
   }
 
@@ -742,6 +774,19 @@ iframe {
 
   .new-collection__more {
     font-size: 1rem;
+  }
+
+  .collection-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .collection__list {
+    display: flex;
+  }
+
+  .collection__list::-webkit-scrollbar {
+    display: none;
   }
 
   /* 브랜드 설명 영역 */
@@ -790,6 +835,11 @@ iframe {
     display: flex;
     flex-direction: row;
     padding: 8% 0 4%;
+  }
+
+  .plastic-item::-webkit-scrollbar,
+  .metal-item::-webkit-scrollbar {
+    display: none;
   }
 
   .plastic-item .img,
