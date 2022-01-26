@@ -35,4 +35,4 @@
 - **html, css :** 레이아웃과 스타일을 제대로 활용할 수 있는지에 초점을 맞춰 작성한 페이지입니다.
   - nav, backToTop, fade in/out 등 간단한 이벤트 포함
 
-[블로그 정리]()
+[블로그 정리](https://velog.io/@duboo/%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-2)
