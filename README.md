@@ -23,6 +23,8 @@
 
 [블로그 정리](https://velog.io/@duboo/%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-1.-html-css)
 
+---
+
 # #2. Plasta
 
 ![Screenshot from 2022-01-26 17-37-26](https://user-images.githubusercontent.com/92058864/151130419-d0f65f87-09bb-40e3-8177-3a54a8790576.png)
