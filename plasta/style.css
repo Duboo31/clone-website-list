@@ -289,7 +289,6 @@ button {
   text-align: center;
   font-family: "Nanum Gothic", sans-serif;
   letter-spacing: 0.3rem;
-  background: red;
 }
 
 .new-collection__tit {
@@ -309,22 +308,20 @@ button {
 }
 
 .collection-container {
-  background: blue;
+  width: 100%;
+  max-width: 975px;
   overflow: hidden;
-  width: calc(980px * 5);
+  margin: 0 auto;
 }
 
 .collection__list {
-  display: block;
-  float: left;
-  overflow: hidden;
-}
-
-.collection__item {
-  display: inline-block;
+  display: flex;
+  position: relative;
 }
 
 .collection__item img {
+  max-width: 975px;
+  width: 100vw;
   vertical-align: bottom;
 }
 
@@ -481,10 +478,10 @@ button {
   font-size: 0.7rem;
 }
 
-.prev,
-.next {
+.prevBt,
+.nextBt {
   width: 40px;
-  height: 50px;
+  height: 40px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -492,12 +489,12 @@ button {
   z-index: 99;
 }
 
-.prev {
+.prevBt {
   background-image: url("https://www.plasta.co.kr/images/arrow_prev.png");
   left: 0.2rem;
 }
 
-.next {
+.nextBt {
   background-image: url("https://www.plasta.co.kr/images/arrow_next.png");
   right: 0.2rem;
 }
@@ -673,8 +670,6 @@ button {
   z-index: 999;
   box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
   border-radius: 0 10px 0 10px;
-  /* 삭제해야함 */
-  display: none;
 }
 
 iframe {
@@ -774,7 +769,6 @@ iframe {
 
   /* 신상 정보 이미지 슬라이드 -----------------------------------------------------*/
   .new-collection {
-    width: 100%;
     padding: 7.5rem 0;
   }
 
@@ -787,16 +781,9 @@ iframe {
   }
 
   .collection-container {
-    width: 100%;
-    overflow: hidden;
   }
 
   .collection__list {
-    display: flex;
-  }
-
-  .collection__list::-webkit-scrollbar {
-    display: none;
   }
 
   /* 브랜드 설명 영역 */
@@ -850,17 +837,17 @@ iframe {
     margin: 0 1rem;
   }
 
-  .prev,
-  .next {
+  .prevBt,
+  .nextBt {
     width: 40px;
     height: 80px;
   }
 
-  .prev {
+  .prevBt {
     left: 1.2rem;
   }
 
-  .next {
+  .nextBt {
     right: 1.2rem;
   }
 
