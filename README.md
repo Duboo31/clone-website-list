@@ -13,7 +13,7 @@
 
 # #1. le cashmere
 
-![Screenshot from 2022-01-26 17-38-26](https://user-images.githubusercontent.com/92058864/151130385-5db0b91a-6f72-469c-a81c-820a6b423eda.png)
+![Screenshot from 2022-01-26 17-44-41](https://user-images.githubusercontent.com/92058864/151131010-f53ef9ec-da42-4fda-afa6-e8ae5b4a0304.png)
 
 해당 페이지는 반응형이 아닌 접속하는 디바이스에 따라 필요한 코드를 불러오는 **정적인 웹**입니다.
 
@@ -29,6 +29,6 @@
 
 ![Screenshot from 2022-01-26 17-37-26](https://user-images.githubusercontent.com/92058864/151130419-d0f65f87-09bb-40e3-8177-3a54a8790576.png)
 
-뷰포트에따라 레이아웃이 달리지는 반응형 웹입니다.
+뷰포트에따라 레이아웃이 달리지는 반응형 웹입니다. 데스크탑과 모바일 환경을 구성했습니다.
 
 [블로그 정리]()
