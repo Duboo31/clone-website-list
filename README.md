@@ -35,3 +35,5 @@
   - nav, backToTop, fade in/out 등 간단한 이벤트 포함
 
 [블로그 정리](https://velog.io/@duboo/%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-2)
+
+>나머지 클론 코딩은 별로 
